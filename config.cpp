@@ -6,6 +6,14 @@ class CfgPatches {
 		requiredVersion = 0.1;
 	};
 };
+class CfgFunctions  {
+	class bro  {
+		class factions_fpl {
+			file = "\bro_factions\functions";
+			class randomizeMilitia {};
+		};
+	};
+};
 class CfgFactionClasses {
 	class bro_arctic {
 		displayName = "[Bro] Arctic";
@@ -19,6 +27,19 @@ class CfgFactionClasses {
 		side = 1;
 		icon = "";
 	};
+	class bro_509th {
+		displayName="[Bro] 509th OPFOR";
+		priority=0;
+		side=0;
+		icon="";
+	};
+	class bro_militia {
+		displayName = "[Bro] Militia";
+		flag = "\a3\data_f\flags\flag_red_co.paa";
+		icon = "\a3\data_f\cfgfactionclasses_opf_ca.paa";
+		priority = 0;
+		side = 0;
+	};
 };
 class CfgVehicleClasses {
 	class bro_men {
@@ -30,6 +51,9 @@ class CfgVehicleClasses {
 	class bro_vehicles {
 		displayName = "Vehicles";
 	};
+	class bro_drones {
+		displayName="Drones";
+	};
 };
 class CfgVehicles {
 // Backpack
@@ -37,7 +61,7 @@ class CfgVehicles {
 	class Bro_EDBackpack_Black: B_CivilianBackpack_01_Everyday_Black_F {
 		scope = 2;
 		icon = "Bro_Factions\icon_ca.paa";
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		editorPreview = "";
 		displayname = "[Bro] PMC Backpack (Black)";
 		hiddenSelectionsTextures[] = {
@@ -273,7 +297,7 @@ class CfgWeapons {
 		author = "Bromine";
 		scope = 2;
 		icon = "Bro_Factions\icon_ca.paa";
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		displayName = "[Bro] PMC Uniform (Polo)";
 		hiddenSelections[] = {
 			"camo",
@@ -295,7 +319,7 @@ class CfgWeapons {
 		author = "Bromine";
 		scope = 2;
 		icon = "Bro_Factions\icon_ca.paa";
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		displayName = "[Bro] Gorka (Arctic)";
 		hiddenSelections[]  = {
 			"camo"
@@ -319,7 +343,7 @@ class CfgWeapons {
 	class Bro_Hat_Black: H_Cap_blk {
 		scope = 2;
 		icon = "Bro_Factions\icon_ca.paa";
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		displayName = "[Bro] Hat, Black";
 		hiddenSelectionsTextures[] = {
 			"Bro_Factions\PMC\pmc_hat_black_co.paa"
@@ -328,7 +352,7 @@ class CfgWeapons {
 	class Bro_Hat_Black_Headset: H_Cap_blk {
 		scope = 2;
 		icon = "Bro_Factions\icon_ca.paa";
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		displayName = "[Bro] Hat, Black, Headset";
 		model = "Bro_Factions\PMC\Bro_Hat_Black_Headset.p3d";
 		hiddenSelections[] = {

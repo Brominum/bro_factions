@@ -20,7 +20,7 @@ class CfgVehicles {
 	class Bro_O_PMC_Rifleman: O_R_Gorka_base_F {
 		scope = 2;
 		scopeCurator = 2;
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		editorPreview = "";
 		author = "Bromine";
 		faction = "bro_PMC";
@@ -174,7 +174,7 @@ class CfgVehicles {
 	class Bro_O_PMC_Helicopter: B_Heli_Light_01_F {
 		scope = 2;
 		scopeCurator = 2;
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		faction = "bro_PMC";
 		side = 0;
 		hiddenSelectionsTextures[] = {"a3\air_f\Heli_Light_01\Data\Heli_Light_01_ext_ION_CO.paa"};
@@ -186,7 +186,7 @@ class CfgVehicles {
 	class Bro_O_PMC_LSV: B_CTRG_LSV_01_light_F {
 		scope = 2;
 		scopeCurator = 2;
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		faction = "bro_PMC";
 		side = 0;
 		crew = "Bro_O_PMC_Teamleader";
@@ -220,7 +220,7 @@ class CfgVehicles {
 	class Bro_O_PMC_Jeep_LMG: I_C_Offroad_02_LMG_F {
 		scope = 2;
 		scopeCurator = 2;
-		picture = "Bro_Factions\icon_ca.paa";
+		picture = "\Bro_Factions\icon_ca.paa";
 		faction = "bro_PMC";
 		side = 0;
 		crew = "Bro_O_PMC_Teamleader";
